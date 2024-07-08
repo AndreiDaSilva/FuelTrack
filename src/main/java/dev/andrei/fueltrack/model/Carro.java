@@ -13,7 +13,7 @@ public class Carro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "carro_id")
-    private Integer id;
+    private Long id;
 
     @Column(length = 50, nullable = false)
     private String marca;
@@ -24,7 +24,7 @@ public class Carro {
     /**
      * @return the id
      */
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 

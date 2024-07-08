@@ -13,7 +13,7 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "usuario_id")
-    private Integer id;
+    private Long id;
 
     @Column(length = 100, nullable = false)
     private String nome;
@@ -30,7 +30,7 @@ public class Usuario {
     /**
      * @return the id
      */
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 

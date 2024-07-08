@@ -17,7 +17,7 @@ public class Abastecimento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "abastecimento_id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "km_atual", nullable = false)
     private Integer kmAtual;
@@ -50,7 +50,7 @@ public class Abastecimento {
     /**
      * @return the id
      */
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 

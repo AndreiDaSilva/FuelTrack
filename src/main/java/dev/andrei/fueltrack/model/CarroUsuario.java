@@ -15,7 +15,7 @@ public class CarroUsuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "carro_user_id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "capacidade_tanque", precision = 10, scale = 2, nullable = false)
     private Double totalTanque;
@@ -34,7 +34,7 @@ public class CarroUsuario {
     /**
      * @return the id
      */
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 

@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "carro_usuario")
-public class CarroUsuario {
+public class UsuarioVeiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "carro_user_id")
@@ -29,7 +29,7 @@ public class CarroUsuario {
 
     @ManyToOne
     @JoinColumn(name = "carro_id", nullable = false)
-    private Carro carro;
+    private Veiculo carro;
 
     /**
      * @return the id
@@ -83,14 +83,14 @@ public class CarroUsuario {
     /**
      * @return the carro
      */
-    public Carro getCarro() {
+    public Veiculo getCarro() {
         return carro;
     }
 
     /**
      * @param carro the carro to set
      */
-    public void setCarro(Carro carro) {
+    public void setCarro(Veiculo carro) {
         this.carro = carro;
     }
 

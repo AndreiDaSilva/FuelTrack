@@ -2,18 +2,15 @@ package dev.andrei.fueltrack.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "Carro")
-public class Carro {
+public class Veiculo {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "carro_id")
-    private Long id;
+    @Column(name = "codigo_carro")
+    private Long codigoCarro;
 
     @Column(length = 50, nullable = false)
     private String marca;
@@ -21,11 +18,21 @@ public class Carro {
     @Column(length = 50, nullable = false)
     private String modelo;
 
+    @Column(length = 50, nullable = false)
+    private String tipo;
+
     /**
      * @return the id
      */
     public Long getId() {
-        return id;
+        return codigoCarro;
+    }
+
+    /**
+     * @param codigoCarro the marca to set
+     */
+    public void setCodigoCarro(Long codigoCarro){
+        this.codigoCarro = codigoCarro;
     }
 
     /**

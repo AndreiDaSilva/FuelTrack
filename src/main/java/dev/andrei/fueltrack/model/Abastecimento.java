@@ -45,7 +45,7 @@ public class Abastecimento {
 
     @ManyToOne
     @JoinColumn(name = "carro_user_id", nullable = false)
-    private CarroUsuario carroUsuario;
+    private UsuarioVeiculo carroUsuario;
 
     /**
      * @return the id
@@ -169,14 +169,14 @@ public class Abastecimento {
     /**
      * @return the carroUsuario
      */
-    public CarroUsuario getCarroUsuario() {
+    public UsuarioVeiculo getCarroUsuario() {
         return carroUsuario;
     }
 
     /**
      * @param carroUsuario the carroUsuario to set
      */
-    public void setCarroUsuario(CarroUsuario carroUsuario) {
+    public void setCarroUsuario(UsuarioVeiculo carroUsuario) {
         this.carroUsuario = carroUsuario;
     }
 

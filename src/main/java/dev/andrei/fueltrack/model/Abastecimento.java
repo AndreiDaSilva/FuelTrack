@@ -31,13 +31,13 @@ public class Abastecimento {
     @Column(name = "tipo_combustivel", length = 50, nullable = false)
     private String tipoCombustivel;
 
-    @Column(name = "preco_litro", precision = 10, scale = 2, nullable = false)
+    @Column(name = "preco_litro", precision = 10, nullable = false)
     private Double precoLitro;
 
-    @Column(name = "combustivel_total", precision = 10, scale = 2, nullable = false)
+    @Column(name = "combustivel_total", precision = 10, nullable = false)
     private Double qtdTotalCombustivel;
 
-    @Column(name = "preco_total", precision = 10, scale = 2, nullable = false)
+    @Column(name = "preco_total", precision = 10, nullable = false)
     private Double precoTotal;
 
     @Column(name = "tanque_cheio", nullable = false)

@@ -17,7 +17,7 @@ public class UsuarioVeiculo {
     @Column(name = "carro_user_id")
     private Long id;
 
-    @Column(name = "capacidade_tanque", precision = 10, scale = 2, nullable = false)
+    @Column(name = "capacidade_tanque", precision = 10, nullable = false)
     private Double totalTanque;
 
     @Column(name = "km_inicial", nullable = false)

@@ -3,9 +3,9 @@ package dev.andrei.fueltrack.repository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import dev.andrei.fueltrack.model.Veiculo;
+import dev.andrei.fueltrack.model.UsuarioVeiculo;
 
 @Repository
-public interface CarroRepository extends CrudRepository<Veiculo, Long>{
+public interface VeiculoUsuarioRepository extends CrudRepository<UsuarioVeiculo, Long> {
     
 }

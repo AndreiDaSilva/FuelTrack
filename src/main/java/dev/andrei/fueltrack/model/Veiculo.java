@@ -21,6 +21,9 @@ public class Veiculo {
     @Column(length = 50, nullable = false)
     private String tipo;
 
+    @Column(length = 50, nullable = false)
+    private String combustivel;
+
     /**
      * @return the id
      */
@@ -31,7 +34,7 @@ public class Veiculo {
     /**
      * @param codigoCarro the marca to set
      */
-    public void setCodigoCarro(Long codigoCarro){
+    public void setCodigoCarro(Long codigoCarro) {
         this.codigoCarro = codigoCarro;
     }
 
@@ -61,7 +64,36 @@ public class Veiculo {
      */
     public void setModelo(String modelo) {
         this.modelo = modelo;
-    }   
+    }
+
+    /**
+     * @return the tipo
+     */
+    public String getTipo() {
+        return tipo;
+    }
+
+    /**
+     * @param tipo the tipo to set
+     */
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    /**
+     * @return the combustivel
+     */
+    public String getCombustivel() {
+        return combustivel;
+    }
+
+    /**
+     * @param combustivel the combustivel to set
+     */
+    public void setCombustivel(String combustivel) {
+        this.combustivel = combustivel;
+    }
+
     
-    
-}   
+
+}
